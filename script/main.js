@@ -1,26 +1,26 @@
 let user1 = {
-    userPhoto: "url('../img/userPhotos/SusanSmith_thispersondoesnotexist.com.jpg')",
+    userPhoto: "url('https://raw.githubusercontent.com/ArtiomB5/3ReviewCarousel-15VanillaJSProjects/main/img/userPhotos/SusanSmith_thispersondoesnotexist.com.jpg')",
     userName: "susan smith",
     profession: "web developer",
     review: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry"
 };
 
 let user2 = {
-    userPhoto: "url('../img/userPhotos/AnnaJohnson_thispersondoesnotexist.com.jpg')",
+    userPhoto: "url('https://raw.githubusercontent.com/ArtiomB5/3ReviewCarousel-15VanillaJSProjects/main/img/userPhotos/AnnaJohnson_thispersondoesnotexist.com.jpg')",
     userName: "anna johnson",
     profession: "web designer",
     review: "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal."
 };
 
 let user3 = {
-    userPhoto: "url('../img/userPhotos/PeterJones_thispersondoesnotexist.com.jpg')",
+    userPhoto: "url('https://raw.githubusercontent.com/ArtiomB5/3ReviewCarousel-15VanillaJSProjects/main/img/userPhotos/PeterJones_thispersondoesnotexist.com.jpg')",
     userName: "peter jones",
     profession: "intern",
     review: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag."
 };
 
 let user4 = {
-    userPhoto: "url('../img/userPhotos/BillAnderson_thispersondoesnotexist.com.jpg')",
+    userPhoto: "url('https://raw.githubusercontent.com/ArtiomB5/3ReviewCarousel-15VanillaJSProjects/main/img/userPhotos/BillAnderson_thispersondoesnotexist.com.jpg')",
     userName: "bill anderson",
     profession: "the boss",
     review: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. "

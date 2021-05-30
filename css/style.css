@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.8fr 1fr 1fr;
+  grid-template-areas: ". . ." ". h ." ". w ." ". . .";
+}
+.container .header {
+  grid-area: h;
+}
+.container .header .underline {
+  margin: 0 auto;
+  width: 65px;
+  border-top: 5px solid green;
+  margin-top: 5px;
+}
+.container .wrapper {
+  grid-area: w;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.5fr 0.25fr;
+  grid-template-areas: "p p p" "t t t" "b b b";
+  border: 2px solid #30892f;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.container .wrapper .wrapper__photo {
+  grid-area: p;
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". z .";
+  padding: 15px 0;
+}
+.container .wrapper .wrapper__photo .box {
+  grid-area: z;
+  position: relative;
+}
+.container .wrapper .wrapper__photo .box .photo {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/photos/AnnaJohnson_thispersondoesnotexist.com.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  margin: 0 auto;
+  z-index: 10;
+}
+.container .wrapper .wrapper__photo .box .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #30892f;
+  z-index: -1;
+  position: absolute;
+  left: 30px;
+  top: -3px;
+}
+.container .wrapper .wrapper__photo .box .quote-cirlce {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #30892f;
+  left: 5px;
+  top: 0;
+  z-index: 8;
+}
+.container .wrapper .wrapper__photo .box .quote-cirlce .icon {
+  position: relative;
+  left: 15%;
+  top: 20%;
+}
+.container .wrapper .wrapper__text {
+  grid-area: t;
+  padding: 0 10px;
+}
+.container .wrapper .wrapper__buttons {
+  grid-area: b;
+  padding-bottom: 15px;
+}
+.container .wrapper .wrapper__buttons .before-next {
+  text-align: center;
+  padding: 5px;
+}
+.container .wrapper .wrapper__buttons .before-next .navigate-button {
+  display: inline-block;
+}
+.container .wrapper .wrapper__buttons .button-surprise {
+  max-width: 100px;
+  padding: 7px;
+  border: 2px outset #30892f;
+  margin: 5px auto;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 7px;
+  background-color: #d9f2d9;
+  color: #30892f;
+}
+.container .wrapper .wrapper__buttons .button-surprise:hover {
+  background-color: #30892f;
+  color: black;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.quote {
+  font-size: 48px;
+  color: white;
+  padding-top: 15%;
+  padding-left: 13%;
+}
+
+.navigation {
+  font-size: 36px;
+  color: #30892f;
+}
+
+.navigation:hover {
+  font-size: 36px;
+  color: darkgreen;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 0;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  color: #30892f;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 24px;
+}
